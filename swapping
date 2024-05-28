@@ -3,12 +3,14 @@ public class Main
 {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		int a = sc.nextInt();
-		int b =sc. nextInt();
-		System.out.println("Before swapping the values are :"+a+" "+b);
+		int a1 = sc.nextInt();
+		int b1 =sc. nextInt();
+		System.out.println("Before swapping the values are :"+a1+" "+b1);
 		System.out.println("Do you want to continue 1 or not 0");
 		int i= sc.nextInt();
 		while(i==1){
+                int a=a1;
+                int b=b1;
 		System.out.println("1.with third variable");
 		System.out.println("2. With + and - operator");
 		System.out.println("3. with * and / operator");
