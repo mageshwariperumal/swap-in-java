@@ -1,0 +1,122 @@
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a = sc.nextInt();
+		int b =sc. nextInt();
+		System.out.println("Before swapping the values are :"+a+" "+b);
+		System.out.println("Do you want to continue 1 or not 0");
+		int i= sc.nextInt();
+		while(i==1){
+		System.out.println("1.with third variable");
+		System.out.println("2. With + and - operator");
+		System.out.println("3. with * and / operator");
+		System.out.println("4. with xor operator");
+		System.out.println("5. in single statement");
+		System.out.println("Enter the choice:");
+		int choice =sc.nextInt();
+		switch(choice)
+		{
+		    case 1:
+		        int t=a; // a=10, t=10
+		        a=b; // a=20
+		        b=t;//b=10
+		        System.out.println("After swapping the values are :"+a+" "+b);
+		        break;
+		    case 2:
+		        a=a+b;//a=10+20, a=30
+		        b=a-b;//b=30-20, b=10
+		        a=a-b;//a=30-20, a=10
+		        System.out.println("After swapping the values are :"+a+" "+b);
+		        break;
+		    case 3:
+		        a=a*b;//a=10*20,a=200
+		        b=a/b;//b=200/20,b=10
+		        a=a/b;//a=200/10,a=20
+		        System.out.println("After swapping the values are :"+a+" "+b);
+		        break;
+		    case 4:
+		        a=a^b;//a=1010,b=10100,a^b=11110,a=11110=30
+		        b=a^b;//b=11110(30)^10100(20),b=01010(10)
+		        a=a^b;//a=11110(30)^01010(10),a=10100(20)
+		        System.out.println("After swapping the values are :"+a+" "+b);
+		        break;
+		    case 5:
+		        b=(a+b)-(a=b);//right to left excution,a=10,b=20,a=20,b=(10+20)-(20),b=10
+		        System.out.println("After swapping the values are :"+a+" "+b);
+		        break;
+		    default:
+		        System.out.println("not in choice");
+		        break;
+		}
+	    System.out.println("Do you want to continue 1 or not 0");
+	    i= sc.nextInt();
+		}
+		
+	}
+}
+
+sample output:
+10
+20
+Before swapping the values are:10 20
+Do you want to continue 1 or not 0
+1
+1.with third variable
+2. With + and - operator
+3. with * and / operator
+4. with xor operator
+5. in single statement
+Enter the choice:1
+After swapping the values are 20 10
+Do you want to continue 1 or not 0
+1
+1.with third variable
+2. With + and - operator
+3. with * and / operator
+4. with xor operator
+5. in single statement
+Enter the choice:2
+After swapping the values are 20 10
+Do you want to continue 1 or not 0
+1
+1.with third variable
+2. With + and - operator
+3. with * and / operator
+4. with xor operator
+5. in single statement
+Enter the choice:3
+After swapping the values are 20 10
+Do you want to continue 1 or not 0
+1
+1.with third variable
+2. With + and - operator
+3. with * and / operator
+4. with xor operator
+5. in single statement
+Enter the choice:4
+After swapping the values are 20 10
+Do you want to continue 1 or not 0
+1
+1.with third variable
+2. With + and - operator
+3. with * and / operator
+4. with xor operator
+5. in single statement
+Enter the choice:5
+After swapping the values are 20 10
+Do you want to continue 1 or not 0
+1
+1.with third variable
+2. With + and - operator
+3. with * and / operator
+4. with xor operator
+5. in single statement
+Enter the choice:6
+not in choice
+Do you want to continue 1 or not 0
+0
+=== Code Execution Successful ===
+
+
